@@ -18,7 +18,6 @@ export const styles = StyleSheet.create({
         paddingTop: '10%'
     },
     containerFooter: {
-        padding: 0,
-        backgroundColor: 'transparent',
+        backgroundColor: '#070908',
     },
 })

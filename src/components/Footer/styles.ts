@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     width: 20,
     height: 30,
     tintColor: 'white',
-    top: 95   
+    top: 95    
   },
 Centro: {
     top: 95   

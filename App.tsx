@@ -89,7 +89,7 @@ const Principal = () => {
 
                 </View>
             </ScrollView>
-            <View>
+            <View style={styles.containerFooter}>
                 <Footer />
             </View>
         </View >

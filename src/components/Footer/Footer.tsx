@@ -23,7 +23,7 @@ export const Footer = () => {
                 <Image source={Seta} style={styles.iconeMeio} />
             </TouchableOpacity>
 
-            <TouchableOpacity>
+            <TouchableOpacity >
                 <Image source={Sacola} style={styles.iconeCentro} />
             </TouchableOpacity>
 

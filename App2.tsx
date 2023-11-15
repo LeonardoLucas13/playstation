@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, FlatList, ActivityIndicator } from 'react-native';
 import { styles } from "./styles";
 import play from "./src/assets/play.png"
 import logo from "./src/assets/playlogo.png"
@@ -15,6 +15,7 @@ const App = () => {
         source={logo}
         style={styles.logo}
       />
+      <ActivityIndicator/>
     </View>
   )
 }
