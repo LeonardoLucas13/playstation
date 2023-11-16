@@ -69,9 +69,8 @@ const Principal = () => {
                     data={amigos}
                     horizontal
                     keyExtractor={item => item.id}
-                    renderItem={({ item }) => {
-                        return <Amigos online={item} />
-                    }}
+                    renderItem={({ item }) => <Amigos online={item} />
+                    }
                 />
 
                 <Text style={styles.text}>Jogos recentes</Text>
@@ -81,9 +80,8 @@ const Principal = () => {
                     <FlatList
                         data={recentes}
                         keyExtractor={item => item.id}
-                        renderItem={({ item }) => {
-                            return <JogosRecentes jogo={item} />
-                        }}
+                        renderItem={({ item }) => <JogosRecentes jogo={item} />
+                        }
                     />
 
                 </View>

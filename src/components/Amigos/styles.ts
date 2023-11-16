@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   image: {
     width: 170,
     height: 90,
-    borderTopEndRadius: 10,
+    borderTopRightRadius: 10,
     borderTopLeftRadius: 10
   },
   avatar: {

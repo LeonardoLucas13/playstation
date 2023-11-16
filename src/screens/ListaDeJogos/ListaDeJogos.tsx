@@ -114,9 +114,8 @@ const Principal = () => {
                             data={recentes}
                             numColumns={2}
                             keyExtractor={item => item.id}
-                            renderItem={({ item }) => {
-                                return <ListaDeJogos jogo={item} />
-                            }}
+                            renderItem={({ item }) => <ListaDeJogos jogo={item} />
+                            }
                         />
                     </View>
                 </ScrollView>
