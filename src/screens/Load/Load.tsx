@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, FlatList, ActivityIndicator } from 'react-native';
 import { styles } from "./styles";
-import play from "./src/assets/play.png"
-import logo from "./src/assets/playlogo.png"
+import play from "../../assets/play.png"
+import logo from "../../assets/playlogo.png"
 
 const App = () => {
   return (

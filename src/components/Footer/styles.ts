@@ -49,7 +49,6 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
-    marginTop: 0,
   },
   titulo: {
     color: '#fff',
