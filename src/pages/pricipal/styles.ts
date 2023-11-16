@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     containerConteudo: {
         backgroundColor: '#070908',
         paddingHorizontal: '5%',
+        paddingBottom: 100
     },
     text: {
         marginLeft: 30,

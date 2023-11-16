@@ -93,40 +93,42 @@ const Principal = () => {
 
     return (
         <View style={styles.container}>
-
-            <TextInput
-                style={styles.containerText}
-                placeholder="Procurar um jogo"
-                placeholderTextColor='#fff'
-            />
-
-            <View style={styles.ladoALado}>
-                <TouchableOpacity>
-                    <View style={styles.containerJogos}>
-                        <Text style={styles.text}>Jogos</Text>
-                    </View>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                    <Text style={styles.text}>Jogadores</Text>
-                </TouchableOpacity>
-            </View>
-            <ScrollView>
-                <Text style={styles.titulo}>Tendências</Text>
-                <View style={styles.containerConteudo}>
-                    <FlatList
-                        data={recentes}
-                        numColumns={2}
-                        keyExtractor={item => item.id}
-                        renderItem={({ item }) => {
-                            return <ListaDeJogos jogo={item} />
-                        }}
+            <View>
+                <ScrollView>
+                    <TextInput
+                        style={styles.containerText}
+                        placeholder="Procurar um jogo"
+                        placeholderTextColor='#fff'
                     />
-                </View>
-            </ScrollView>
+
+                    <View style={styles.ladoALado}>
+                        <TouchableOpacity>
+                            <View style={styles.containerJogos}>
+                                <Text style={styles.text}>Jogos</Text>
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <Text style={styles.text}>Jogadores</Text>
+                        </TouchableOpacity>
+                    </View>
+                    <Text style={styles.titulo}>Tendências</Text>
+                    <View style={styles.containerConteudo}>
+                        <FlatList
+                            data={recentes}
+                            numColumns={2}
+                            keyExtractor={item => item.id}
+                            renderItem={({ item }) => {
+                                return <ListaDeJogos jogo={item} />
+                            }}
+                        />
+                    </View>
+                </ScrollView>
+            </View>
             <View style={styles.containerFooter}>
                 <Footer />
             </View>
         </View >
+
     )
 }
 export default Principal
