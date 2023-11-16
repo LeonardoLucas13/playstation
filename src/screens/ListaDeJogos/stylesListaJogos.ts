@@ -59,10 +59,12 @@ export const styles = StyleSheet.create({
         bottom: 0,
         left: 0,
         right: 0,
+        marginBottom: 25
         
     },
     containerConteudo: {
         paddingHorizontal: '5%',
+        marginBottom: 100
     },
     scrollContent: {
         paddingBottom: 180,

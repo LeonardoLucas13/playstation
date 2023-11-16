@@ -6,9 +6,9 @@ export const styles = StyleSheet.create({
         width: '100%'
     },
     containerConteudo: {
-        backgroundColor: '#070908',
+        //backgroundColor: '#070908',
         paddingHorizontal: '5%',
-        paddingBottom: 100
+        marginBottom: 100
     },
     text: {
         marginLeft: 30,
@@ -22,6 +22,7 @@ export const styles = StyleSheet.create({
             bottom: 0,
             left: 0,
             right: 0,
-            
+            marginBottom: 25
+        
     },
 })

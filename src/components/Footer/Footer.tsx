@@ -1,5 +1,5 @@
 import React from "react"
-import { View, Image, ImageBackground, Text, TouchableOpacity } from 'react-native';
+import { View, Image, Text, TouchableOpacity } from 'react-native';
 import { styles } from './styles'
 import base from "../../assets/teste.png"
 import Controle from "../../assets/controle.png"
@@ -8,15 +8,18 @@ import Sacola from "../../assets/sacola.png"
 import Jogos from "../../assets/jogos.png"
 import Lupa from "../../assets/lupa.png"
 import Botao from "../../assets/botao.png";
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStack } from "../../routes/Stake";
+
 
 export const Footer = () => {
-    // const base = require("../../assets/teste.png");
-
-    return <View > 
+    const navigation = useNavigation<NativeStackNavigationProp<RootStack>>();
+    return <View>
         <View style={styles.container}>
             <View style={styles.ladoALado}>
 
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=> navigation.navigate('Home')}>
                     <Image source={Controle} style={styles.iconeCantos} />
                 </TouchableOpacity>
 
@@ -32,7 +35,7 @@ export const Footer = () => {
                     <Image source={Jogos} style={styles.iconeMeio} />
                 </TouchableOpacity>
 
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=> navigation.navigate('ListaDeJogos')}>
                     <Image source={Lupa} style={styles.iconeLupa} />
                 </TouchableOpacity>
 
@@ -46,6 +49,6 @@ export const Footer = () => {
         <Image source={base} style={styles.image} />
        
 
-    </View>
+        </View>
 
 }
