@@ -2,13 +2,12 @@ import { StyleSheet, Platform } from "react-native"
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: '#121315',
+        backgroundColor: '#0c0d0f',
+        width: '100%'
     },
     containerConteudo: {
         backgroundColor: '#070908',
         paddingHorizontal: '5%',
-
     },
     text: {
         marginLeft: 30,
@@ -18,6 +17,10 @@ export const styles = StyleSheet.create({
         paddingTop: '10%'
     },
     containerFooter: {
-        backgroundColor: '#070908',
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            
     },
 })

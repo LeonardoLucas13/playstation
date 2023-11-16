@@ -11,11 +11,13 @@ const App = () => {
         source={play}
         style={styles.backgroundImage}
       />
+      <View style={styles.coluna}>
       <Image
         source={logo}
         style={styles.logo}
       />
-      <ActivityIndicator/>
+      <ActivityIndicator style={styles.carregando}/>
+      </View>
     </View>
   )
 }

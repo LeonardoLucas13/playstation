@@ -20,6 +20,18 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         width: 130,
         height: 100,
+        tintColor: '#FFF',
+        bottom: 10      
+    },
+    carregando: {
+        position: 'absolute',
+        width: 130,
+        height: 100,
         tintColor: '#FFF',      
+    },
+    coluna: {
+      flexDirection: 'column',
+      alignItems: 'center',
+     
     }
 })

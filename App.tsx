@@ -60,10 +60,9 @@ const Principal = () => {
         }
     ]);
 
-    return (
-        <View style={styles.container}>
+    return (<View style={styles.container}>
+        <View >
             <ScrollView>
-
                 <Usuario />
                 <Text style={styles.text}>Amigos jogando</Text>
                 <FlatList
@@ -75,7 +74,7 @@ const Principal = () => {
                     }}
                 />
 
-                    <Text style={styles.text}>Jogos recentes</Text>
+                <Text style={styles.text}>Jogos recentes</Text>
 
 
                 <View style={styles.containerConteudo}>
@@ -89,10 +88,11 @@ const Principal = () => {
 
                 </View>
             </ScrollView>
-            <View style={styles.containerFooter}>
-                <Footer />
-            </View>
         </View >
+        <View style={styles.containerFooter}>
+            <Footer />
+        </View>
+    </View>
     )
 }
 export default Principal

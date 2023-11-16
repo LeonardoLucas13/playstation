@@ -2,7 +2,7 @@ import { StyleSheet, Platform } from "react-native"
 
 export const styles = StyleSheet.create({
   image: {
-    width: 150,
+    width: 170,
     height: 90,
     borderTopEndRadius: 10,
     borderTopLeftRadius: 10

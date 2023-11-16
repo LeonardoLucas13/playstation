@@ -55,7 +55,6 @@ export const styles = StyleSheet.create({
         paddingLeft: 20,
     },
     containerFooter: {
-        backgroundColor: '#070908',
         position: 'absolute',
         bottom: 0,
         left: 0,
